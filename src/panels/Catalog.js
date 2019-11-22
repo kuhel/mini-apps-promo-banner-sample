@@ -13,7 +13,6 @@ import './Catalog.css';
 const Catalog = ({ onReaction, isLiked, isDisliked, promoBanner, showPromoBanner, setShowBanner, changeMode, selectContext, toggleContext, mode, animals, contextOpened }) => {
 
 	const list = (item, idx, showBanner) => {
-		console.log(item);
 		if (showBanner && idx !== 0 && idx % 3 === 0) {
 			return (
 				<div key={idx} className='PromoBannerList'>
@@ -29,7 +28,6 @@ const Catalog = ({ onReaction, isLiked, isDisliked, promoBanner, showPromoBanner
 	const animalCard = (pet) => {
 		return <AnimalCard onReaction={onReaction} isLiked={isLiked(pet.id)} isDisliked={isDisliked(pet.id)} key={pet.id} {...pet} />
 	}
-	console.log(animals)
 
 	return (
 		<div>
