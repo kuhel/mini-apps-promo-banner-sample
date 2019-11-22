@@ -6,7 +6,7 @@ import { animalsData } from './data/data';
 import '@vkontakte/vkui/dist/vkui.css';
 
 const MainView = () => {
-	const [reactions, setReactions] = useState(REACTIONS.LIKE);
+	const [reactions, setReactions] = useState({});
 	const [showBanner, setShowBanner] = useState(false);
 	const [promoBanner, setPromoBanner] = useState(null);
 	const [contextOpened, setContextOpened] = useState(false);
@@ -22,6 +22,8 @@ const MainView = () => {
 		setAnimals(animalsData[newMode]);
 		setMode(newMode);
 		setContextOpened(false);
+		setReactions({});
+		setShowBanner(false);
 		const scrollY = getScrollY();
 		if (scrollY > 0) {
 			window.scroll({
