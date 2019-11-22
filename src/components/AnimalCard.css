@@ -8,7 +8,7 @@
     flex-direction: column;
     margin-bottom: -100px;
     border-top-right-radius: 100px;
-    background-color: #fff;
+    background-color: #FF9002;
     color: rgba(0, 0, 0, 0.625);
     text-align: center;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
@@ -36,8 +36,8 @@
     color: #fff;
 }
 .AnimalCard:nth-of-type(6n+1) {
-    background-color: #FF9002;
-    color: #fff;
+    background-color: #fff;
+    color: rgba(0, 0, 0, 0.625);
 }
 .Div--ios.AnimalCard {
     padding: 0px;
