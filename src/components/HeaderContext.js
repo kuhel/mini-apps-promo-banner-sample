@@ -10,14 +10,14 @@ const HeaderContextBar = ({changeMode, contextOpened, mode, headerContext}) => {
 		<HeaderContext opened={contextOpened} onClose={headerContext}>
 			<List>
 				<Cell
-					before={<span role='img' aria-label='like' style={{marginRight: '10px'}}>😺</span>}
-					asideContent={mode === ANIMALS.CAT ? <Icon24Done fill="var(--accent)" /> : null}
+					before='😺'
+					asideContent={mode === ANIMALS.CAT ? <Icon24Done fill="var(--accent)" />  : null}
 					onClick={changeMode}
 					data-mode={ANIMALS.CAT}
-				> Cats</Cell>
+				>Cats</Cell>
 				<Cell
-					before={<span role='img' aria-label='like' style={{marginRight: '10px'}}>🐶</span>}
-					asideContent={mode === ANIMALS.DOG ? <Icon24Done fill="var(--accent)" /> : null}
+					before='🐶'
+					asideContent={mode === ANIMALS.DOG ? <Icon24Done fill="var(--accent)" />  : null}
 					onClick={changeMode}
 					data-mode={ANIMALS.DOG}
 				>Dogs</Cell>
