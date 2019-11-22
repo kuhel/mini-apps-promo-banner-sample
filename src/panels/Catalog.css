@@ -10,3 +10,14 @@
 .Promo--Hide {
 	transform: translateY(101%);
 }
+
+.PromoBannerList .AnimalCard {
+	padding-bottom: 290px;
+	margin-bottom: -200px;
+}
+
+.PromoBannerList .PromoBanner {
+	background-color: rgba(255, 255, 255, 0.5);
+	outline: none;
+	transform: translateY(-40px);
+}

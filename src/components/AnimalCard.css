@@ -3,7 +3,7 @@
     background-color: #000;
 }
 
-.CatCard {
+.AnimalCard {
     display: flex;
     flex-direction: column;
     margin-bottom: -100px;
@@ -14,42 +14,42 @@
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
     overflow: hidden;
 }
-.CatCard:nth-of-type(1) {
+.AnimalCard:nth-of-type(1) {
     overflow: visible;
     border-top-right-radius: 0;
 }
-.CatCard:nth-of-type(1) .CatCard__Photo img {
+.AnimalCard:nth-of-type(1) .AnimalCard__Photo img {
     border-top-right-radius: 0;
 }
-.CatCard:nth-of-type(2n+1) {
+.AnimalCard:nth-of-type(2n+1) {
     background-color: #BAB4C7;
 }
-.CatCard:nth-of-type(3n+1) {
+.AnimalCard:nth-of-type(3n+1) {
     background-color: #ECB75D;
 }
-.CatCard:nth-of-type(4n+1) {
+.AnimalCard:nth-of-type(4n+1) {
     background-color: #404E67;
     color: #fff;
 }
-.CatCard:nth-of-type(5n+1) {
+.AnimalCard:nth-of-type(5n+1) {
     background-color: #915E71;
     color: #fff;
 }
-.CatCard:nth-of-type(6n+1) {
+.AnimalCard:nth-of-type(6n+1) {
     background-color: #FF9002;
     color: #fff;
 }
-.Div--ios.CatCard {
+.Div--ios.AnimalCard {
     padding: 0px;
     padding-bottom: 180px;
 }
 
-.CatCard__Photo {
+.AnimalCard__Photo {
     display: flex;
     justify-content: center;
 }
 
-.CatCard__Photo img {
+.AnimalCard__Photo img {
     width: 100%;
     max-width: 100%;
     height: auto;
@@ -59,24 +59,24 @@
     border-top-right-radius: 100px;
 }
 
-.CatCard__Footer,
-.CatCard__Info {
+.AnimalCard__Footer,
+.AnimalCard__Info {
     padding-left: 32px;
     padding-right: 32px;
 }
 
-.CatCard__Name {
+.AnimalCard__Name {
     font-size: 32px;
     line-height: 1;
     padding: 0 !important;
 }
 
-.CatCard .ReactionBtn {
+.AnimalCard .ReactionBtn {
     transition: opacity .05s ease-in, transform .05s ease-in;
 }
   
-.CatCard .ReactionBtn--Liked > button .Button__content,
-.CatCard .ReactionBtn--Disliked > button .Button__content {
+.AnimalCard .ReactionBtn--Liked > button .Button__content,
+.AnimalCard .ReactionBtn--Disliked > button .Button__content {
     transform: scale(1.5);
     opacity:1;
 }
@@ -105,27 +105,27 @@
     transform: translateY(6px);
 }
 
-.CatCard--Liked .ReactionBtn--Like,
-.CatCard--Disliked .ReactionBtn--Dislike {
+.AnimalCard--Liked .ReactionBtn--Like,
+.AnimalCard--Disliked .ReactionBtn--Dislike {
     transform: scale(1.5);
 }
 
-.CatCard--Liked .ReactionBtn--Dislike,
-.CatCard--Disliked .ReactionBtn--Like {
+.AnimalCard--Liked .ReactionBtn--Dislike,
+.AnimalCard--Disliked .ReactionBtn--Like {
     transform: scale(0.75);
     opacity:0.5;
 }
 
 
 
-.CatCard__Footer {
+.AnimalCard__Footer {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: center;
 }
 
-.CatCard__Footer .ReactionBtn {
+.AnimalCard__Footer .ReactionBtn {
     flex-basis: 50%;
 }
 

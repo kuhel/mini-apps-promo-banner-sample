@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import CatalogContainer from './containers/CatalogContainer';
-import { REACTIONS, ANIMALS } from './config';
+import { REACTIONS, ANIMALS_TYPES } from './config';
 import { promoBannerProps } from './data/data';
 import { animalsData } from './data/data';
 import '@vkontakte/vkui/dist/vkui.css';
@@ -10,16 +10,17 @@ const MainView = () => {
 	const [showBanner, setShowBanner] = useState(false);
 	const [promoBanner, setPromoBanner] = useState(null);
 	const [contextOpened, setContextOpened] = useState(false);
-	const [mode, setMode] = useState(ANIMALS.CAT);
-	const [animals, setAnimals] = useState(animalsData[ANIMALS.CAT]);
+	const [mode, setMode] = useState(ANIMALS_TYPES.CAT);
+	const [animals, setAnimals] = useState(animalsData[ANIMALS_TYPES.CAT]);
 
 	const toggleContext = () => {
 		setContextOpened(!contextOpened);
 	}
 
 	const changeMode = (e) => {
-		setAnimals(animalsData[e.currentTarget.dataset.mode]);
-		setMode(e.currentTarget.dataset.mode);
+		const newMode = e.currentTarget.dataset.mode;
+		setAnimals(animalsData[newMode]);
+		setMode(newMode);
 		setContextOpened(false);
 		const scrollY = getScrollY();
 		if (scrollY > 0) {
@@ -27,6 +28,9 @@ const MainView = () => {
 				top: 0,
 				behavior: 'smooth'
 			});
+		}
+		if (newMode === ANIMALS_TYPES.DOG) {
+			window.addEventListener('scroll', onScroll);
 		}
 	};
 
@@ -70,7 +74,6 @@ const MainView = () => {
 	})
 
 	useEffect(() => {
-		window.addEventListener('scroll', onScroll);
 		async function fetchData() {
 			// const promoBannerData = await connect.sendPromise('VKWebAppGetAds');
 			await stall();

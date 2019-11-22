@@ -3,7 +3,7 @@ import HeaderContext from '@vkontakte/vkui/dist/components/HeaderContext/HeaderC
 import List from '@vkontakte/vkui/dist/components/List/List';
 import Cell from '@vkontakte/vkui/dist/components/Cell/Cell';
 import Icon24Done from '@vkontakte/icons/dist/24/done';
-import { ANIMALS } from '../config';
+import { ANIMALS_TYPES } from '../config';
 
 const HeaderContextBar = ({changeMode, contextOpened, mode, headerContext}) => {
 	return (
@@ -11,15 +11,15 @@ const HeaderContextBar = ({changeMode, contextOpened, mode, headerContext}) => {
 			<List>
 				<Cell
 					before='😺'
-					asideContent={mode === ANIMALS.CAT ? <Icon24Done fill="var(--accent)" />  : null}
+					asideContent={mode === ANIMALS_TYPES.CAT ? <Icon24Done fill="var(--accent)" />  : null}
 					onClick={changeMode}
-					data-mode={ANIMALS.CAT}
+					data-mode={ANIMALS_TYPES.CAT}
 				>Cats</Cell>
 				<Cell
 					before='🐶'
-					asideContent={mode === ANIMALS.DOG ? <Icon24Done fill="var(--accent)" />  : null}
+					asideContent={mode === ANIMALS_TYPES.DOG ? <Icon24Done fill="var(--accent)" />  : null}
 					onClick={changeMode}
-					data-mode={ANIMALS.DOG}
+					data-mode={ANIMALS_TYPES.DOG}
 				>Dogs</Cell>
 			</List>
 		</HeaderContext>

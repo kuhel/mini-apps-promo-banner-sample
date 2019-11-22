@@ -5,7 +5,7 @@ export const REACTIONS = {
 	DISLIKE: 'dislike',
 };
 
-export const ANIMALS = {
+export const ANIMALS_TYPES = {
 	CAT: 'cat',
 	DOG: 'dog',
 };
