@@ -114,3 +114,16 @@ export const animalsData = {
         },
     ],
 };
+
+export const promoBannerProps = {
+	title: 'Заголовок',
+	domain: 'vk.com',
+	ctaText: 'Перейти',
+	advertisingLabel: 'Реклама',
+	iconLink: 'https://sun9-7.userapi.com/c846420/v846420985/1526c3/ISX7VF8NjZk.jpg',
+	description: 'Описание рекламы',
+    ageRestriction: 16,
+    url_types: 'types',
+    bannerID: 'sdfhj23h54',
+    trackingLink: 'https://vk.com/services'
+};

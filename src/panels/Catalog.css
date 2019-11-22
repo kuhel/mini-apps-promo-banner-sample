@@ -1,0 +1,22 @@
+.Promo {
+	transition: transform .6s ease;
+	transform: translateY(0);
+}
+
+.Promo--Show {
+	transform: translateY(0);
+}
+
+.Promo--Hide {
+	transform: translateY(101%);
+}
+
+.PromoBannerList .AnimalCard {
+	padding-bottom: 290px;
+	margin-bottom: -200px;
+}
+
+.PromoBannerList .PromoBanner {
+	background-color: rgba(255, 255, 255, 0.5);
+	outline: none;
+}
