@@ -1,4 +1,4 @@
-export const APP_ID = 7048911;
+export const APP_ID = 7218661;
 
 export const REACTIONS = {
 	LIKE: 'like',
